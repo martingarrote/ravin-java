@@ -1,13 +1,12 @@
 package br.com.devxlabs.ravin.models.dtos;
 
-import java.io.Serial;
-import java.io.Serializable;
-import java.util.Date;
-
 import br.com.devxlabs.ravin.enums.ProductType;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
+
+import java.io.Serial;
+import java.io.Serializable;
 
 public class ProductDTO implements Serializable {
 
