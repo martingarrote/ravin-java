@@ -1,4 +1,4 @@
-package br.com.devxlabs.ravin;
+package br		.com.devxlabs.ravin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

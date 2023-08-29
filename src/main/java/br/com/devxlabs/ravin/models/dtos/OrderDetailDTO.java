@@ -12,8 +12,6 @@ import java.sql.Timestamp;
 
 public class OrderDetailDTO {
 
-    public static final Long MIN_QUANTITY = 1L;
-
     @Serial
     private static final long serialVersionUID = 1L;
 
@@ -35,7 +33,6 @@ public class OrderDetailDTO {
 
     @NotBlank(message = "O campo quantidade não pode estar em branco")
     @NotEmpty(message = "O campo quantidade não pode ser vázio")
-    @Min(value = MIN_QUANTITY, message = "A quantidade deve ser no mínimo um")
     private int quantity;
 
     public OrderDetailDTO() {
@@ -48,7 +45,7 @@ public class OrderDetailDTO {
                           Timestamp remindingPreparationTime,
                           @NotBlank(message = "O campo status de preparação não pode estar em branco") @NotEmpty(message = "O campo status de preparação não pode ser vázio") PreparationOrderStatus preparationOrderStatus,
                           String comments,
-                          @NotBlank(message = "O campo quantidade não pode estar em branco") @NotEmpty(message = "O campo quantidade não pode ser vázio") @Min(value = MIN_QUANTITY, message = "A quantidade deve ser no mínimo um") int quantity) {
+                          @NotBlank(message = "O campo quantidade não pode estar em branco") @NotEmpty(message = "O campo quantidade não pode ser vázio") int quantity) {
         super();
         this.id = id;
         this.product = product;
